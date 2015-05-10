@@ -8,26 +8,34 @@
  *
  * Main module of the application.
  */
-angular
-  .module('seaboardApp', [
-    'ngAnimate',
-    'ngCookies',
-    'ngResource',
-    'ngRoute',
-    'ngSanitize',
-    'ngTouch'
-  ])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
+var seaboard = angular.module('seaboardApp', ['ngAnimate', 'ngCookies', 'ngResource', 'ngRoute', 'ngSanitize', 'ngTouch', 'ui.bootstrap', 'ui.router']);
+
+seaboard
+  .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+    $urlRouterProvider.otherwise('/');
+    $stateProvider
+      .state('main', {
+        url: '/',
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/about', {
+      .state('about', {
+        url: 'about',
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
-      })
-      .otherwise({
-        redirectTo: '/'
       });
-  });
+  }]);
+  //.config(function ($routeProvider) {
+  //  $routeProvider
+  //    .when('/', {
+  //      templateUrl: 'views/main.html',
+  //      controller: 'MainCtrl'
+  //    })
+  //    .when('/about', {
+  //      templateUrl: 'views/about.html',
+  //      controller: 'AboutCtrl'
+  //    })
+  //    .otherwise({
+  //      redirectTo: '/'
+  //    });
+  //});

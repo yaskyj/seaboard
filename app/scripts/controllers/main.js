@@ -7,7 +7,7 @@
  * # MainCtrl
  * Controller of the seaboardApp
  */
-angular.module('seaboardApp')
+seaboard
   .controller('MainCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
