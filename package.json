@@ -1,7 +1,27 @@
 {
   "name": "seaboard",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "aws-sign2": "^0.5.0",
+    "bl": "^0.9.4",
+    "caseless": "^0.10.0",
+    "combined-stream": "^1.0.2",
+    "end-of-stream": "^1.1.0",
+    "forever-agent": "^0.6.1",
+    "form-data": "^0.2.0",
+    "hawk": "^2.3.1",
+    "http-signature": "^0.11.0",
+    "json-stringify-safe": "^5.0.0",
+    "mime-types": "^2.0.11",
+    "node-uuid": "^1.4.3",
+    "oauth-sign": "^0.7.0",
+    "qs": "^2.4.2",
+    "readable-stream": "^1.0.33",
+    "stringstream": "0.0.4",
+    "tough-cookie": "^1.1.0",
+    "tunnel-agent": "^0.4.0",
+    "xtend": "^4.0.0"
+  },
   "repository": {},
   "devDependencies": {
     "grunt": "^0.4.5",

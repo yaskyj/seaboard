@@ -13,7 +13,7 @@ body {
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -45,6 +45,7 @@ body {
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
+  padding-bottom: 8%;
 }
 
 /* Declare heights because of positioning of img element */
@@ -120,6 +121,7 @@ body {
     margin-bottom: 20px;
     font-size: 21px;
     line-height: 1.4;
+    padding-bottom: 8%;
   }
 
   .featurette-heading {
@@ -132,6 +134,12 @@ body {
     margin-top: 120px;
   }
 }
+
+/*@media (max-width: 768px) {*/
+  /*.carousel-caption p {*/
+    /*padding-bottom: 20%;*/
+  /*}*/
+/*}*/
 /*Base CSS*/
 /*.browsehappy {*/
   /*margin: 0.2em 0;*/
