@@ -19,38 +19,59 @@
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div class="navbar-wrapper">
-      <div class="container">
+    <!--<div class="navbar-wrapper">-->
+      <!--<div class="container">-->
 
-        <nav class="navbar navbar-inverse navbar-static-top seaboard-nav">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="main">Seaboard Cabinets</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav navbar-right">
-                <li><a ui-sref="main">Home</a></li>
-                <li><a ui-sref="about">About</a></li>
-                <li><a ui-sref="main">Contact</a></li>
+        <!--<nav class="navbar navbar-inverse navbar-static-top seaboard-nav">-->
+          <!--<div class="container">-->
+            <!--<div class="navbar-header">-->
+              <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">-->
+                <!--<span class="sr-only">Toggle navigation</span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+              <!--</button>-->
+              <!--<a class="navbar-brand" href="main">Seaboard Cabinets</a>-->
+            <!--</div>-->
+            <!--<div id="navbar" class="navbar-collapse collapse">-->
+              <!--<ul class="nav navbar-nav navbar-right">-->
+                <!--<li><a ui-sref="main">Home</a></li>-->
+                <!--<li><a ui-sref="about">About</a></li>-->
+                <!--<li><a ui-sref="main">Contact</a></li>-->
                 <!--<li class="active"><a href="#">Home</a></li>-->
                 <!--<li><a href="#about">About</a></li>-->
                 <!--<li><a href="#contact">Contact</a></li>-->
-              </ul>
+              <!--</ul>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</nav>-->
+
+      <!--</div>-->
+    <!--</div>-->
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li><a ui-sref="main">Home</a></li>
+                  <li><a ui-sref="about">About</a></li>
+                  <li><a ui-sref="main">Contact</a></li>
+                  <!--<li class="active"><a href="#">Home</a></li>-->
+                  <!--<li><a href="#">Features</a></li>-->
+                  <!--<li><a href="#">Contact</a></li>-->
+                </ul>
+              </nav>
             </div>
           </div>
-        </nav>
-
+          <div ui-view=""></div>
+        </div>
       </div>
     </div>
-
-    <div ui-view=""></div>
-
 
 
       <!--Base Template-->
