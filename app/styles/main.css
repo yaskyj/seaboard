@@ -35,70 +35,70 @@ body {
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
-.carousel .carousel-inner .item img {
+/*
+inspired from http://codepen.io/Rowno/pen/Afykb
+*/
+.carousel-fade .carousel-inner .item img {
   width: 100%;
 }
-.carousel .carousel-inner .item {
+
+.carousel-fade .carousel-inner .item {
   height: 100vh;
   opacity: 0;
   -webkit-transition: opacity .6s;
   -moz-transition: opacity .6s;
   -o-transition: opacity .6s;
   transition: opacity .6s;
-  /*-webkit-transition: ease-in-out .6s;*/
-  /*-moz-transition: ease-in-out .6s;*/
-  /*-ms-transition: ease-in-out .6s;*/
-  /*-o-transition: ease-in-out .6s;*/
-  /*transition: ease-in-out .6s;*/
 }
 
-.carousel .carousel-inner .active {
+.carousel-fade .carousel-inner .active {
   opacity: 1;
 }
-.carousel .carousel-inner .active, .next, .prev, .next.left, .prev.right, .active.left, .active.right{
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
   left: 0;
-  -webkit-transform: translate3d(0,0,0);
-  -moz-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  -o-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
+  opacity: 0;
+  z-index: 1;
 }
 
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
 
-/*.carousel-fade .carousel-inner .item img {*/
-  /*width: 100%;*/
-/*}*/
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
 
-/*.carousel-fade .carousel-inner .item {*/
-  /*height: 100vh;*/
-  /*opacity: 0;*/
-  /*-webkit-transition-property: opacity;*/
-  /*-moz-transition-property: opacity;*/
-  /*-o-transition-property: opacity;*/
-  /*transition-property: opacity;*/
-/*}*/
-
-/*.carousel-fade .carousel-inner .active {*/
-  /*opacity: 1;*/
-  /*-webkit-transition-property: opacity;*/
-  /*-moz-transition-property: opacity;*/
-  /*-o-transition-property: opacity;*/
-  /*transition-property: opacity;*/
-/*}*/
-
-/*.carousel-fade .carousel-inner .active.left, .active.right {*/
-  /*left: 0;*/
-  /*opacity: 0;*/
-  /*z-index: 1;*/
-/*}*/
-
-/*.carousel-fade .carousel-inner .next.left, .next.right {*/
-  /*opacity: 1;*/
-/*}*/
+/*
+WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+now override the 3.3 new styles for modern browsers & apply opacity
+*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .carousel-fade .carousel-inner > .item.next,
+  .carousel-fade .carousel-inner > .item.active.right {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .item.prev,
+  .carousel-fade .carousel-inner > .item.active.left {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .item.next.left,
+  .carousel-fade .carousel-inner > .item.prev.right,
+  .carousel-fade .carousel-inner > .item.active {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
-
 @media (min-width: 768px) {
   /* Navbar positioning foo */
   .navbar-wrapper {
