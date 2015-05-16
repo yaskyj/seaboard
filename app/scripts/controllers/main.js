@@ -10,6 +10,10 @@
 angular.module('seaboardApp')
   .controller('MainCtrl', function ($scope) {
     $scope.viewLoaded = function(){
-      $('.carousel ').carousel()
+      $('.carousel ').carousel({
+        interval: 4000,
+        pause: false,
+        keyboard: false
+      })
     }
   });
