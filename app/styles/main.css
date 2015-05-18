@@ -52,16 +52,6 @@ inspired from http://codepen.io/Rowno/pen/Afykb
   -o-transition: opacity .6s;
   transition: opacity .6s;
 }
-/*.carousel-fade .carousel-inner .item {*/
-  /*height: 100vh;*/
-  /*opacity: 0;*/
-  /*-webkit-transition: opacity .6s;*/
-  /*-moz-transition: opacity .6s;*/
-  /*-o-transition: opacity .6s;*/
-  /*transition: opacity .6s;*/
-  /*-webkit-background-size: cover;*/
-  /*background-size: cover;*/
-/*}*/
 
 .carousel-fade .carousel-inner .active {
   opacity: 1;
@@ -75,20 +65,26 @@ inspired from http://codepen.io/Rowno/pen/Afykb
 }
 
 .carousel-fade .one {
-  background: url("../images/image20.jpg");
+  background: url("../images/image20.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
 .carousel-fade .two {
-  background: url("../images/image15.jpg");
+  background: url("../images/image15.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
 .carousel-fade .three {
-  background: url("../images/image17.jpg");
+  background: url("../images/image17.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
