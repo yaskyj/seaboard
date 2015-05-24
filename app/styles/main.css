@@ -1,6 +1,9 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
+* {
+  font-family: 'Architects Daughter', cursive;
+}
 
 body {
   color: #5a5a5a;
@@ -9,6 +12,18 @@ body {
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
+
+.navbar-nav {
+  font-size: 120%;
+}
+
+.navbar {
+  margin: 0;
+}
+
+.seaboard-nav {
+  background-color: rgba(0,0,0,0.7);
+}
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
@@ -127,9 +142,9 @@ now override the 3.3 new styles for modern browsers & apply opacity
 -------------------------------------------------- */
 @media (min-width: 768px) {
   /* Navbar positioning foo */
-  .navbar-wrapper {
-    margin-top: 20px;
-  }
+  /*.navbar-wrapper {*/
+    /*margin-top: 20px;*/
+  /*}*/
   .navbar-wrapper .container {
     padding-right: 15px;
     padding-left: 15px;

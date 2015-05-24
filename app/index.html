@@ -8,6 +8,7 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
+    <link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
     <!-- endbuild -->
@@ -49,8 +50,8 @@
     <!--</div>-->
 
     <div class="navbar-wrapper">
-      <div class="container">
-        <nav class="navbar navbar-inverse navbar-static-top">
+      <!--<div class="container">-->
+        <nav class="navbar navbar-inverse navbar-static-top seaboard-nav">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse" aria-expanded="false" aria-controls="navbar">
@@ -59,12 +60,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#/">seaboard</a>
+              <a class="navbar-brand" ui-sref="main">Seaboard Cabinet</a>
             </div>
 
             <div class="collapse navbar-collapse" id="js-navbar-collapse">
               <ul class="nav navbar-nav navbar-right">
-                <!--navbar-nav navbar-right-->
                 <li><a ui-sref="main">Home</a></li>
                 <li><a ui-sref="about">About</a></li>
                 <li><a ui-sref="main">Contact</a></li>
@@ -72,7 +72,7 @@
             </div>
           </div>
         </nav>
-      </div>
+      <!--</div>-->
     </div>
 
 
