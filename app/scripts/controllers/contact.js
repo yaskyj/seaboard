@@ -25,5 +25,4 @@ angular.module('seaboardApp')
         show: true
       }
     ];
-    console.log($scope.map);
   }]);
