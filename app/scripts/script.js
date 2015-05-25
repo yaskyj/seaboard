@@ -1,3 +1,4 @@
+'use strict';
 $(document).ready(function() {
   $(window).scroll(
     {
@@ -6,9 +7,9 @@ $(document).ready(function() {
     function () {
       var currentTop = $(window).scrollTop();
       if (currentTop < this.previousTop) {
-        $(".navbar-fixed-top").fadeIn("slow");
+        $('.navbar-fixed-top').fadeIn('slow');
       } else {
-        $(".navbar-fixed-top").fadeOut("slow");
+        $('.navbar-fixed-top').fadeOut('slow');
       }
       this.previousTop = currentTop;
     });

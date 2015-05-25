@@ -1,0 +1,19 @@
+<ui-gmap-google-map center='map.center' zoom='map.zoom' options='map.options'>
+  <ui-gmap-markers models="markers" coords="'self'" icon="'icon'">
+    <ui-gmap-windows show="show">
+      <div ng-non-bindable>
+        <img src="{{logo}}" alt="Logo"/>
+        <br/>
+        Address: {{address1}}
+        <br/>
+        <a target="_blank" href="https://maps.google.com?daddr=5729+204th+St+SW+Suite+400+Lynnwood+WA+98036">(Click here for directions)</a>
+        <br/>
+        Phone: {{phone}}
+        <br/>
+        Fax: {{fax}}
+        <br/>
+        Email: <a href="mailto:{{email}}">{{email}}</a>
+      </div>
+    </ui-gmap-windows>
+  </ui-gmap-markers>
+</ui-gmap-google-map>
