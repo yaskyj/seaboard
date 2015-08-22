@@ -30,7 +30,7 @@ angular.module('seaboardApp', ['ngAnimate', 'ngCookies', 'ngResource', 'ngRoute'
   }])
   .config(['uiGmapGoogleMapApiProvider', function (GoogleMapApiProvider) {
     GoogleMapApiProvider.configure({
-      key: 'AIzaSyAfltuCM5AGdScNbvXCFPOgos-wpIeL6QA',
+      //key: 'AIzaSyAfltuCM5AGdScNbvXCFPOgos-wpIeL6QA',
       v: '3.17',
       libraries: 'weather,geometry,visualization'
     });
